@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: minecraftazurefile
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: minecraftazurefile
+  resources:
+    requests:
+      storage: 5Gi
