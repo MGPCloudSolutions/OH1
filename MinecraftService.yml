@@ -5,8 +5,13 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-  - port: 25565
+  - name: connect
+    port: 25565
     targetPort: 25565
+    protocol: TCP
+  - name: rcon 
+    port: 25575
+    targetPort: 25575
     protocol: TCP
   selector:
     app: minecraftservice
