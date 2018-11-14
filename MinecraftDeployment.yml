@@ -24,7 +24,7 @@ spec:
         - name: EULA
           value: "true"
         volumeMounts:
-        - mountPath: "/mnt/azure"
+        - mountPath: "/data"
           name: volume
       volumes:
         - name: volume
