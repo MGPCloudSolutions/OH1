@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: portal-minecraft
-        image: openhack/minecraft-server
+        image: openhack/minecraft-server:2.0
         name: portal-minecraft
         ports:
         - containerPort: 25565
