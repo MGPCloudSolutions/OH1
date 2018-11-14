@@ -24,3 +24,10 @@ spec:
         env:
         - name: EULA
           value: "true"
+        volumeMounts:
+        - mountPath: "/mnt/azure"
+          name: volume
+      volumes:
+        - name: volume
+        persistentVolumeClaim:
+          claimName: minecraftazurefile
