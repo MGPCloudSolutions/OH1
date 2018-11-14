@@ -29,5 +29,5 @@ spec:
           name: volume
       volumes:
         - name: volume
-        persistentVolumeClaim:
-          claimName: minecraftazurefile
+          persistentVolumeClaim:
+            claimName: minecraftazurefile
